@@ -3,6 +3,7 @@
 A mini OTT (streaming) platform: browse **Movies**, **TV Shows**, and **Live TV**, save titles
 to **My List**, leave **reviews**, with role-based catalog management — backed by a mock REST
 API (json-server).
+Live URL : https://lumi-mocha.vercel.app/login
 
 ## Auth & roles
 
@@ -74,77 +75,8 @@ src/
   utils/api.ts        Single axios client + typed REST functions — components/slices never hardcode a URL
 ```
 
-## Deployment
-
-This is two separate pieces: a static frontend (Vite build output) and a mock API
-(`json-server`) that needs a persistent Node process. They deploy differently.
-
-**Honesty note:** `json-server` writes straight to `Data/db.json` on disk. Most free hosts
-(Render included) wipe a service's filesystem on every restart/redeploy/sleep cycle. That
-means new signups, movies, reviews, etc. added after deployment will reset eventually — fine
-for a demo, not real persistence. A production version of this app would need a real database.
-
-### Option A — split across two platforms (recommended)
-
-**1. Push to GitHub** (skip if already done):
-```bash
-git init && git add . && git commit -m "Initial commit"
-# create a repo on GitHub, then:
-git remote add origin <your-repo-url>
-git push -u origin main
-```
-
-**2. Deploy the API to Render:**
-1. [render.com](https://render.com) → sign in with GitHub → **New +** → **Web Service**
-2. Connect this repo
-3. Runtime: **Node** · Build Command: `npm install` · Start Command:
-   `npx json-server Data/db.json --port $PORT --host 0.0.0.0`
-4. Instance type: **Free** → **Create Web Service**
-5. Once deployed, copy its URL (e.g. `https://lumi-api-xxxx.onrender.com`) and sanity-check it:
-   visit `<that-url>/movies` in a browser — you should see JSON.
-
-**3. Deploy the frontend to Vercel:**
-1. [vercel.com](https://vercel.com) → sign in with GitHub → **Add New** → **Project** → import this repo
-2. Framework preset **Vite** is auto-detected (build `npm run build`, output `dist`)
-3. Under **Environment Variables**, add `VITE_API_URL` = the Render URL from step 2
-   (Vite bakes `VITE_*` vars in at build time, so this must be set before the first build)
-4. **Deploy**
-
-You now have a live URL. Sign in with the seeded Admin (`Admin` / `admin123`) or a seeded
-Viewer (e.g. `Sharon` / `sharon123`), or sign up fresh.
-
-**Known free-tier quirk:** Render's free web services sleep after 15 minutes of no traffic.
-The first request after that takes 30–60 seconds to wake back up — don't panic if a shared
-link looks dead for a moment.
-
-### Option B — one platform, one Blueprint
-
-A `render.yaml` is included at the repo root, defining both services. From the Render
-Dashboard: **New +** → **Blueprint** → connect this repo. Render will prompt you for
-`VITE_API_URL` during setup — since the API's URL isn't known until Render assigns it, the
-simplest flow is: deploy the Blueprint once, copy the `lumi-api` service's URL, then edit the
-`lumi-app` service's environment variable and trigger a manual redeploy.
-
-### Local development (no deployment)
-
-```bash
-npm install
-npm run server   # json-server on http://localhost:3001 (terminal 1)
-npm run dev        # Vite dev server, usually http://localhost:5173 (terminal 2)
-```
-
-Sign in with the seeded Admin (`Admin` / `admin123`) to manage the catalog and promote users, or
-sign in as a seeded Viewer (e.g. `Sharon` / `sharon123`), or just sign up — new accounts land as
-Viewer automatically.
-
-Other scripts:
-
-```bash
-npm run build         # type-check + production build
-npm run lint           # ESLint
-npm run test            # run the test suite once
-npm run test:watch      # watch mode
-```
+<!--You now have a live URL. Sign in with the seeded Admin (`Admin` / `admin123`) or a seeded
+Viewer (e.g. `Sharon` / `sharon123`), or sign up fresh.-->
 
 ## Notable design decisions
 
