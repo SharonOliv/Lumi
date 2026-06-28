@@ -1,0 +1,45 @@
+The names of React components always start with Capital letters
+ex: Home,Livetv,Login,Movies,Navbar,Tvshows
+
+How this app was created:-
+To create react-vite-app=>npm create vite@latest my-react-app --template react
+using=>javascript
+To start the app => npm run dev
+
+To add bootstrap in react page
+Method 1
+=>add bootstrap css in the head part of index.html as a link
+=>add bootstrap javascript and popper.js(required for navbar toggling) in the head part of index.html as script
+Method 2
+=>install npm=>npm install bootstrap
+In App.jsx
+=>import "bootstrap/dist/css/bootstrap.min.css";
+=>import "bootstrap/dist/js/bootstrap.bundle.min";
+we followed method 2
+=>aso install popper.jsBootstrap relies on Popper.js for certain components like dropdowns and tooltips.
+ If you don't have @popperjs/core installed, run this command =>npm install @popperjs/core
+
+To get data from web
+Axios is a JavaScript library that's used to make HTTP requests from a web browser or Node.js
+For axios=> npm install axios
+
+Using JSON server to create a fake API
+=>An API is something that acts as a communicator between a server and client 
+=>It simply handles sever client request and responses
+=>Now we don't need a real API to test our website
+=>APIs can manipulate,retrieve data from database upon receiving a htt/url request 
+We are using JSON server library to create a fake server
+create a file JsonServer.js in src for server 
+create a file db.json in moviemax which is the database
+for that install it => npm i json-server
+use -g after i for installing this globally so where ever we run a command for it-> it works
+
+For us to fetch the data properly 
+run the server first => npm run server   (== npx json-server Data/db.json --port 3001)
+=> using use effect hook to fetch the data from user
+
+---
+2026 update: the app was migrated to TypeScript + Redux Toolkit.
+API calls now live in src/utils/api.ts and Redux slices in src/store/slices,
+instead of components calling fetch() directly. See README.md for the full
+rundown of what changed and why.

@@ -1,0 +1,24 @@
+services:
+  # The mock API (json-server). Free tier note: this service has an
+  # ephemeral filesystem, so anything written to Data/db.json (new movies,
+  # signups, reviews, etc.) is reset whenever the service restarts or
+  # redeploys. Fine for a demo; not real persistence.
+  - type: web
+    name: lumi-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npx json-server Data/db.json --port $PORT --host 0.0.0.0
+
+  # The frontend. VITE_API_URL is intentionally left for you to fill in
+  # during Blueprint creation (Render will prompt for it) — paste in the
+  # public URL Render assigns to lumi-api above, e.g.
+  # https://lumi-api-xxxx.onrender.com
+  - type: web
+    name: lumi-app
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VITE_API_URL
+        sync: false

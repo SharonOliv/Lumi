@@ -1,0 +1,125 @@
+.review-section {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  padding: 0 16px;
+}
+
+.review-section h2 {
+  font-size: 1.3rem;
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.review-form {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.review-form-rating {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.review-star {
+  background: none;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.review-star.is-filled {
+  color: var(--color-accent);
+}
+
+.review-form textarea {
+  display: block;
+  width: 100%;
+  min-height: 80px;
+  resize: vertical;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background-color: var(--color-bg-elevated);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+}
+
+.review-form textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 20%, transparent);
+}
+
+.review-empty {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.review-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review-item {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.review-item-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.review-item-author {
+  font-weight: 700;
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+
+.review-item-stars {
+  display: inline-flex;
+  gap: 2px;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.review-item-stars .is-filled {
+  color: var(--color-accent);
+}
+
+.review-item-delete {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 4px;
+}
+
+.review-item-delete:hover {
+  color: var(--color-danger);
+}
+
+.review-item-text {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}

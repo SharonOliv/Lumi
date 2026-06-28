@@ -1,0 +1,38 @@
+/* Movies.css - page layout only; card/form visuals live in shared/ */
+.movies-container {
+  padding: 20px 16px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.movies-container > h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: var(--color-text);
+}
+
+/* 1 column on phones, 2 on small tablets, scaling up to 4-5 on desktop */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 540px) {
+  .movies-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .movies-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .movies-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

@@ -1,0 +1,35 @@
+.page-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 200px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 0 20px;
+}
+
+.page-state-spinner {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+  border-top-color: var(--color-accent);
+  animation: page-state-spin 0.7s linear infinite;
+}
+
+@keyframes page-state-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.page-state-error {
+  color: var(--color-danger);
+}
+
+.page-state-empty {
+  color: var(--color-text-muted);
+}

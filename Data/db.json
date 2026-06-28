@@ -1,0 +1,468 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "Sharon",
+      "password": "sharon123",
+      "role": "viewer"
+    },
+    {
+      "id": "2",
+      "username": "Kushala",
+      "password": "kushala123",
+      "role": "viewer"
+    },
+    {
+      "id": "3",
+      "username": "Geetika",
+      "password": "geetika123",
+      "role": "viewer"
+    },
+    {
+      "id": "4",
+      "username": "Akshaya",
+      "password": "akshaya123",
+      "role": "viewer"
+    },
+    {
+      "id": "5",
+      "username": "Admin",
+      "password": "admin123",
+      "role": "admin"
+    }
+  ],
+  "movies": [
+    {
+      "id": "1",
+      "name": "Inception",
+      "rating": 8.8,
+      "description": "A skilled thief leads a team into dreams to steal secrets.",
+      "poster": "https://m.media-amazon.com/images/I/51sBr4IWDwL._AC_SY445_.jpg",
+      "genre": "Sci-Fi",
+      "language": "English"
+    },
+    {
+      "id": "2",
+      "name": "Interstellar",
+      "rating": 8.6,
+      "description": "A team of explorers travels through a wormhole in space to save humanity.",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSngBJ0B7UDrLUkDlp6DCQLsEYuWR-DiHwbnxFFCniB3HiP3f3NZmR1-lKSC34ge6YXu4LX",
+      "genre": "Sci-Fi",
+      "language": "English"
+    },
+    {
+      "id": "3",
+      "name": "The Dark Knight",
+      "rating": "9.1",
+      "description": "Batman faces his greatest enemy, the Joker, in a fight for Gotham.",
+      "poster": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfE_qrYMBZ_JB8om-34WGaZARhpX26yWRttqIDvn4_7l--UzX8mxKcPrc59IcvTpEA_G8gPA",
+      "genre": "Action",
+      "language": "English"
+    },
+    {
+      "id": "4",
+      "name": "The Shawshank Redemption",
+      "rating": 9.3,
+      "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "poster": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSf1DK32xKMQzqSl8wnY1BLVu_gdwsRYzVSNM6A03r6c-fEwrif8raKzkFRuerw1KHdDICvOw",
+      "genre": "Drama",
+      "language": "English"
+    },
+    {
+      "id": "5",
+      "name": "The Godfather",
+      "rating": 9.2,
+      "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "poster": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAY2xsJVIZxm3K0gNtOMr9CSCvLdr5kdo3V3pv2HMuUkTBhFzRe5-b8NDRmO1mt5S5Xp_YyQ",
+      "genre": "Crime",
+      "language": "English"
+    },
+    {
+      "id": "6",
+      "name": "Pulp Fiction",
+      "rating": 8.9,
+      "description": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "poster": "https://tse4.mm.bing.net/th?id=OIP.QP5iSol0cf8ED0o_H2yVgQHaEK&pid=Api&P=0&h=180",
+      "genre": "Crime",
+      "language": "English"
+    },
+    {
+      "id": "7",
+      "name": "The Matrix",
+      "rating": 8.7,
+      "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+      "poster": "https://www.themoviedb.org/t/p/original/oMCUPlwnk2z3QDnzXBxYY6hJogQ.jpg",
+      "genre": "Sci-Fi",
+      "language": "English"
+    },
+    {
+      "id": "8",
+      "name": "Forrest Gump",
+      "rating": 8.8,
+      "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal, and other historical events unfold from the perspective of an Alabama man with an extraordinary life story.",
+      "poster": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNI2SBzYW95C8Wo7zYV3bzVzem58xPnUzsZGLsnLg17mSMgR574acQZpgNK7a5XeF3THjqgQ",
+      "genre": "Drama",
+      "language": "English"
+    },
+    {
+      "id": "9",
+      "name": "The Lord of the Rings: The Return of the King",
+      "rating": 8.9,
+      "description": "Gandalf and Aragorn lead the World of Men against Sauron\u2019s forces in the last battle for Middle-earth.",
+      "poster": "https://m.economictimes.com/thumb/msid-108113664,width-1600,height-900,resizemode-4,imgsize-187382/is-the-lord-of-the-rings-the-rings-of-power-season-3-in-the-works-heres-the-truth.jpg",
+      "genre": "Fantasy",
+      "language": "English"
+    },
+    {
+      "id": "10",
+      "name": "Fight Club",
+      "rating": 8.8,
+      "description": "An insomniac office worker, looking for a way to change his life, crosses paths with a devil-may-care soap maker, forming an underground fight club.",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvHAgGGoJOraKrkB_jUIt-81zqknRoPVnZNQ&s",
+      "genre": "Drama",
+      "language": "English"
+    },
+    {
+      "id": "11",
+      "name": "Gladiator",
+      "rating": 8.5,
+      "description": "A betrayed Roman general sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+      "poster": "https://miro.medium.com/v2/resize:fit:1400/0*TxZdqJf0MQ2mdL9p.jpg",
+      "genre": "Action",
+      "language": "English"
+    },
+    {
+      "id": "13",
+      "name": "Titanic",
+      "rating": 7.8,
+      "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+      "poster": "https://miro.medium.com/v2/resize:fit:1200/0*5MFFtR8MBLOv1q_Z.jpg",
+      "genre": "Romance",
+      "language": "English"
+    },
+    {
+      "id": "14",
+      "name": "Avatar",
+      "rating": 7.8,
+      "description": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/ae4816cade1a5b7f29787d0b89610132c72c7747041481c6619b9cc3302c0101.jpg",
+      "genre": "Sci-Fi",
+      "language": "English"
+    },
+    {
+      "id": "15",
+      "name": "Star Wars: Episode V - The Empire Strikes Back",
+      "rating": 8.7,
+      "description": "After the rebels are overpowered by the Empire, Luke Skywalker begins his journey to become a Jedi Knight, while Darth Vader seeks to capture him.",
+      "poster": "https://cdn.britannica.com/24/259724-050-5F1007C0/Star-Wars-movie-poster-Episode-IV-A-New-Hope-1977.jpg",
+      "genre": "Sci-Fi",
+      "language": "English"
+    },
+    {
+      "id": "2de2",
+      "name": "Inside Out 2",
+      "poster": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVXIXVwclOPh5eUuVyKhE_osTsavNc-56-oR7z7xwmOOP6--wJaVl7jmVOG2lBqBb02_ndTQ",
+      "rating": "4.5",
+      "description": "A movie that describes what a happens in the mind of a teenager who is in their adolesence",
+      "genre": "Animation",
+      "language": "English"
+    },
+    {
+      "id": "16",
+      "name": "RRR",
+      "rating": 7.9,
+      "genre": "Action",
+      "language": "Telugu",
+      "description": "Two revolutionaries cross paths and forge an unlikely bond while resisting colonial rule in 1920s India.",
+      "poster": "https://placehold.co/400x600/211a4a/f2b84b?text=RRR"
+    },
+    {
+      "id": "17",
+      "name": "Dangal",
+      "rating": 8.3,
+      "genre": "Drama",
+      "language": "Hindi",
+      "description": "A former wrestler trains his daughters to become world-class champions, defying social expectations.",
+      "poster": "https://placehold.co/400x600/211a4a/f2b84b?text=Dangal"
+    },
+    {
+      "id": "18",
+      "name": "Vikram",
+      "rating": 7.6,
+      "genre": "Action",
+      "language": "Tamil",
+      "description": "An elite task force investigates a string of murders tied to a shadowy figure from the past.",
+      "poster": "https://placehold.co/400x600/211a4a/f2b84b?text=Vikram"
+    },
+    {
+      "id": "19",
+      "name": "Parasite",
+      "rating": 8.5,
+      "genre": "Thriller",
+      "language": "Korean",
+      "description": "A struggling family schemes its way into a wealthy household's service, with consequences nobody saw coming.",
+      "poster": "https://placehold.co/400x600/211a4a/f2b84b?text=Parasite"
+    }
+  ],
+  "livetv": [
+    {
+      "id": "1",
+      "name": "ESPN",
+      "category": "Sports",
+      "description": "Live sports coverage including football, basketball, and more.",
+      "posterImage": "https://images.squarespace-cdn.com/content/v1/59a4a351197aea9d17f6bc13/1540863021663-XJF62L966UIB0KRD4KZ7/E-102918-COVERPROMO1A.jpg"
+    },
+    {
+      "id": "2",
+      "name": "CNN",
+      "category": "News",
+      "description": "Breaking news and updates from around the world.",
+      "posterImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi4vPwjwDTIp00PLWQrTHpVRHyOIjUd79Wtw&s"
+    },
+    {
+      "id": "3",
+      "name": "HBO",
+      "category": "Entertainment",
+      "description": "Popular TV shows and movies streamed live.",
+      "posterImage": "https://www.cbr.com/wp-content/uploads/2018/07/hbo-logo-header.jpg"
+    },
+    {
+      "id": "5",
+      "name": "BBC News",
+      "category": "News",
+      "description": "Latest news from the UK and the world.",
+      "posterImage": "https://th.bing.com/th/id/OIP.LesYkkNWuwSmMhJZjsLfwAHaEK?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": "6",
+      "name": "National Geographic",
+      "category": "Documentary",
+      "description": "Nature documentaries and educational content.",
+      "posterImage": "https://greyboxcreativemain.b-cdn.net/wp-content/uploads/2020/01/National-Geographic-logo.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Fox News",
+      "category": "News",
+      "description": "Breaking news and live events from around the world.",
+      "posterImage": "https://static.foxnews.com/foxnews.com/content/uploads/2022/02/Fox-News-Fox-and-Freinds-ratings.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Discovery Channel",
+      "category": "Documentary",
+      "description": "Adventure and reality-based TV shows.",
+      "posterImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHlNnInwL9_w5QhBx2kUEDOXXM7zs7ObKGWg&s"
+    },
+    {
+      "id": "9",
+      "name": "MTV",
+      "category": "Music",
+      "description": "Music videos, reality shows, and celebrity content.",
+      "posterImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQG77KMCLl-yLt6NFgSAhRuuuBAhFaI7WSBQ&s"
+    },
+    {
+      "id": "10",
+      "name": "Animal Planet",
+      "category": "Documentary",
+      "description": "Wildlife and animal documentaries.",
+      "posterImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScLuHzzXdzDjY2pDH5K3xBM4RTFYqMqss8KQ&s"
+    },
+    {
+      "id": "11",
+      "name": "TLC",
+      "category": "Reality TV",
+      "description": "Reality TV shows, family-oriented content.",
+      "posterImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqbiIR6peQyD1fnfqWtLIh8zGqqpQUXkB8xg&s"
+    },
+    {
+      "id": "12",
+      "name": "Fox Sports",
+      "category": "Sports",
+      "description": "Live sports events, including football and basketball.",
+      "posterImage": "https://yt3.googleusercontent.com/ytc/AIdro_kRD_CzEE876U_cVjUDaMF-hFzDQB906eoYWLq1JT0u99Q=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "id": "13",
+      "name": "ESPN 2",
+      "category": "Sports",
+      "description": "More live sports, including tennis, soccer, and more.",
+      "posterImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc-S1jyAq6cjYncKBJgvEmdS5FzAQj04KqYw&s"
+    },
+    {
+      "id": "14",
+      "name": "Netflix",
+      "category": "Entertainment",
+      "description": "Stream popular TV shows, movies, and original content.",
+      "posterImage": "https://i.pcmag.com/imagery/reviews/05cItXL96l4LE9n02WfDR0h-5..v1582751026.png"
+    },
+    {
+      "id": "15",
+      "name": "Disney Channel",
+      "category": "Family",
+      "description": "Cartoons, movies, and TV shows for all ages.",
+      "posterImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/2019_Disney_Channel_logo.svg/800px-2019_Disney_Channel_logo.svg.png"
+    }
+  ],
+  "tvshows": [
+    {
+      "id": "1",
+      "name": "Breaking Bad",
+      "rating": 9.5,
+      "description": "A high school chemistry teacher turned methamphetamine producer.",
+      "poster": "https://ntvb.tmsimg.com/assets/p8696131_b_h10_aa.jpg?w=960&h=540",
+      "genre": "Crime",
+      "language": "English"
+    },
+    {
+      "id": "2",
+      "name": "Game of Thrones",
+      "rating": 9.3,
+      "description": "Nine noble families fight for control over the lands of Westeros.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTNhMDJmNmYtNDQ5OS00ODdlLWE0ZDAtZTgyYTIwNDY3OTU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Fantasy",
+      "language": "English"
+    },
+    {
+      "id": "3",
+      "name": "Stranger Things",
+      "rating": 8.7,
+      "description": "A group of kids encounter strange events in their small town.",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWN8AkViFHvaTTH0C7fRRJCnLiYL3CtpbTdw&s",
+      "genre": "Sci-Fi",
+      "language": "English"
+    },
+    {
+      "id": "4",
+      "name": "The Mandalorian",
+      "rating": 8.8,
+      "description": "A bounty hunter travels through the Star Wars galaxy, protecting a mysterious child.",
+      "poster": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4826879538A92B52B2B316E2E9D5A1BEC5C774C094FF9F96E3265E0D4220E3E6/scale?width=1200&aspectRatio=1.78&format=webp",
+      "genre": "Sci-Fi",
+      "language": "English"
+    },
+    {
+      "id": "5",
+      "name": "The Office",
+      "rating": 8.9,
+      "description": "A mockumentary on a group of office workers and their eccentric boss.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZjQwYzBlYzUtZjhhOS00ZDQ0LWE0NzAtYTk4MjgzZTNkZWEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Comedy",
+      "language": "English"
+    },
+    {
+      "id": "6",
+      "name": "Friends",
+      "rating": 8.9,
+      "description": "Follow the lives of six friends living in New York City.",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/e56c18e08e0a07c8d4ee65f45be64cefe6b070992a84182dd5ba35eb7cfc6510.jpg",
+      "genre": "Comedy",
+      "language": "English"
+    },
+    {
+      "id": "7",
+      "name": "The Witcher",
+      "rating": 8.1,
+      "description": "A monster hunter struggles to find his place in a world where humans often prove more wicked than beasts.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTQ5MDU5MTktMDZkMy00NDU1LWIxM2UtODg5OGFiNmRhNDBjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Fantasy",
+      "language": "English"
+    },
+    {
+      "id": "8",
+      "name": "The Crown",
+      "rating": 8.6,
+      "description": "A biographical drama about the reign of Queen Elizabeth II.",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBuwMljamwpGHOLc5MDXZfoSbZyG7fiCnrPw&s",
+      "genre": "Drama",
+      "language": "English"
+    },
+    {
+      "id": "9",
+      "name": "Sherlock",
+      "rating": 9.1,
+      "description": "A modern update finds the famous sleuth and his doctor partner solving crime in 21st-century London.",
+      "poster": "https://ntvb.tmsimg.com/assets/p10406404_b_h10_aa.jpg?w=960&h=540",
+      "genre": "Crime",
+      "language": "English"
+    },
+    {
+      "id": "10",
+      "name": "Money Heist",
+      "rating": 8.2,
+      "description": "A criminal mastermind plans a heist on the Royal Mint of Spain.",
+      "poster": "https://image.tmdb.org/t/p/original/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
+      "genre": "Crime",
+      "language": "Spanish"
+    },
+    {
+      "id": "11",
+      "name": "The Boys",
+      "rating": 8.7,
+      "description": "A group of vigilantes set out to take down corrupt superheroes.",
+      "poster": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYxan0RVMaKr1JxY2uZlvhPqhqU-KIGXbYpU_LW1HG3-f9-RpYQlOPok90hExi-L3cvRuE",
+      "genre": "Action",
+      "language": "English"
+    },
+    {
+      "id": "12",
+      "name": "Westworld",
+      "rating": 8.5,
+      "description": "A futuristic theme park populated by artificial beings takes a dark turn.",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNP3zlyUfEIQ-ARk2BzihX3_7z4HDGMjNSoQ&s",
+      "genre": "Sci-Fi",
+      "language": "English"
+    },
+    {
+      "id": "13",
+      "name": "The Walking Dead",
+      "rating": 8.1,
+      "description": "A group of survivors navigates a post-apocalyptic world overrun by zombies.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYWQwMGRhNGEtZTNhMy00MzVjLWJhMjItYjcwMDljMTkyNTg2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Horror",
+      "language": "English"
+    },
+    {
+      "id": "14",
+      "name": "Peaky Blinders",
+      "rating": 8.8,
+      "description": "A gangster family epic set in Birmingham, England, in the aftermath of World War I.",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbM0o4ann06FnKegan29A60vjrv3S-JpNxpA&s",
+      "genre": "Crime",
+      "language": "English"
+    }
+  ],
+  "favourites": [
+    {
+      "id": "f1",
+      "itemId": "3",
+      "type": "movie",
+      "name": "The Dark Knight",
+      "rating": 9,
+      "genre": "Action",
+      "language": "English",
+      "description": "Batman faces his greatest enemy, the Joker, in a fight for Gotham.",
+      "poster": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfE_qrYMBZ_JB8om-34WGaZARhpX26yWRttqIDvn4_7l--UzX8mxKcPrc59IcvTpEA_G8gPA"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r1",
+      "itemId": "3",
+      "type": "movie",
+      "username": "Sharon",
+      "rating": 5,
+      "text": "Heath Ledger's Joker alone is worth the watch. One of the best superhero films ever made.",
+      "createdAt": "2026-05-02T10:15:00.000Z"
+    },
+    {
+      "id": "r2",
+      "itemId": "3",
+      "type": "movie",
+      "username": "Kushala",
+      "rating": 4,
+      "text": "Great pacing, but the runtime drags a little in the middle act.",
+      "createdAt": "2026-05-10T14:42:00.000Z"
+    }
+  ]
+}

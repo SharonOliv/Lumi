@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+:root {
+  /* ---- Color tokens: modern, neutral, professional (dark, default) ---- */
+  --color-bg: #0b0e14;
+  --color-bg-elevated: #11151d;
+  --color-surface: #161b25;
+  --color-surface-hover: #1d2330;
+  --color-accent: #6366f1;
+  --color-accent-dark: #4f46e5;
+  --color-live: #10b981;
+  --color-danger: #ef4444;
+  --color-danger-dark: #dc2626;
+  --color-text: #e7e9ee;
+  --color-text-muted: #9399a8;
+  --color-border: rgba(148, 163, 184, 0.16);
+
+  /* Text color to use ON TOP of an accent/live/danger-colored background
+     (buttons, badges...). One token instead of a hardcoded hex repeated
+     across a dozen component CSS files. */
+  --color-on-accent: #ffffff;
+  --color-on-live: #ffffff;
+  --color-on-danger: #ffffff;
+
+  /* ---- Type tokens ---- */
+  --font-display: 'Outfit', 'Inter', sans-serif;
+  --font-body: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  font-family: var(--font-body);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  transition: background-color 0.2s ease;
+}
+
+/* Lumi = light: same accent hues for brand recognition, on a clean
+   neutral light surface instead of inverted dark tones. */
+:root[data-theme="light"] {
+  --color-bg: #f7f8fa;
+  --color-bg-elevated: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-hover: #eef0f4;
+  --color-accent: #4f46e5;
+  --color-accent-dark: #4338ca;
+  --color-live: #059669;
+  --color-danger: #dc2626;
+  --color-danger-dark: #b91c1c;
+  --color-text: #111827;
+  --color-text-muted: #667085;
+  --color-border: rgba(17, 24, 39, 0.1);
+
+  --color-on-accent: #ffffff;
+  --color-on-live: #ffffff;
+  --color-on-danger: #ffffff;
+
+  color-scheme: light;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-accent);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--color-accent-dark);
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: var(--font-body);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s, transform 0.15s;
+}
+button:hover {
+  border-color: var(--color-accent);
+  background-color: var(--color-surface-hover);
+}
+button:active {
+  transform: scale(0.98);
+}
+button:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

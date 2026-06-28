@@ -1,0 +1,96 @@
+.mylist-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 16px 48px;
+}
+
+.mylist-container > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: var(--color-text);
+}
+
+.mylist-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.mylist-card {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.mylist-card img {
+  width: 56px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.mylist-card-body {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.mylist-card-body h2 {
+  font-size: 0.95rem;
+  margin: 0 0 4px;
+  color: var(--color-text);
+}
+
+.mylist-card-body p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.mylist-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-accent) !important;
+  margin-top: 4px !important;
+}
+
+.mylist-remove {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-elevated);
+  color: var(--color-text-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mylist-remove:hover {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
+
+@media (min-width: 600px) {
+  .mylist-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .mylist-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

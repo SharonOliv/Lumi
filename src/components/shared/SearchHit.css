@@ -1,0 +1,44 @@
+.search-hit {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  text-decoration: none;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.search-hit:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.search-hit img {
+  width: 56px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.search-hit-body h3 {
+  font-size: 0.95rem;
+  margin: 0 0 4px;
+  color: var(--color-text);
+}
+
+.search-hit-body p {
+  margin: 0;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.search-hit-rating {
+  margin-left: 8px;
+  color: var(--color-accent);
+}

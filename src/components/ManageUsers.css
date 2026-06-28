@@ -1,0 +1,72 @@
+.manage-users-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 16px 48px;
+}
+
+.manage-users-container > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+  color: var(--color-text);
+}
+
+.manage-users-subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+}
+
+.manage-users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.manage-users-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.manage-users-identity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.manage-users-you {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+.manage-users-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 600px) {
+  .manage-users-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
