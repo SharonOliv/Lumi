@@ -2,7 +2,7 @@
 
 A modern OTT streaming platform built with **React**, **TypeScript**, and **Redux Toolkit**. Browse movies, TV shows, and live TV, create a personalized watchlist, write reviews, and manage content with role-based access control.
 
-**Live Demo:** https://lumi-mocha.vercel.app/login
+**Live Demo:** https://lumi-mocha.vercel.app
 
 ---
 
